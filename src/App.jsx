@@ -1,12 +1,12 @@
-import Header from "../src/componets/header/Header.jsx";
-import { BrowserRouter } from "react-router-dom";
-const App = () => {
+import Layout from "./pages/layout";
+
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>
-    </>
+    <div>
+      <Layout />
+      
+    </div>
   )
 }
+
 export default App;
