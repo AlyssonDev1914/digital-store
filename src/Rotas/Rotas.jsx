@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import ProductViewPage from "../pages/ProductViewPage/ProductViewPage"
-import ProductListingPage from "../pages/ProductListingPage/ProductListingPage"
+import PageProduct from "../pages/PageProduct/PageProduct";
+import ProductsPage from "../pages/ProductsPage/ProductsPage";
 
 const Rotas = () =>{
 
@@ -9,8 +9,8 @@ const Rotas = () =>{
         <>
         <Routes>
             <Route path= "/" element= {<Home/>}/>
-            <Route path= "/product/:id" element= {<ProductViewPage/>}/>
-            <Route path= "/produtos" element= {< ProductListingPage/>}/>
+            <Route path= "/product/:id" element= {<PageProduct/>}/>
+            <Route path= "/produtos" element= {< ProductsPage/>}/>
         </Routes>
 
         </>

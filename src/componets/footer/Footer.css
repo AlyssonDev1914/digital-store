@@ -12,10 +12,13 @@
 }
 
 * {
+ 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
 }
+
+
 
 body {
     min-height: 100vh; 
@@ -43,7 +46,7 @@ footer {
     justify-content: space-between; 
     gap: 10px; 
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     max-height: 454px;
     margin: 0 auto;
 }
