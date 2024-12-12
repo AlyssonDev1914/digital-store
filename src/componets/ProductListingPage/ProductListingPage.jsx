@@ -1,36 +1,40 @@
-import React from "react";
-import ProductData from "../productsData/ProductData";
+import React from 'react';
+import ProductCard from '../ProductCard/ProductCard';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+// Definindo o componente de ProductListing 
+function ProductListingPage({ products }) {
+    const ListingContainer = styled.div`
+        display:flex;
+        flex-direction: row;
 
-const ProductListingPage = () => {
-  return (
-    <div className="product-listing">
-      <div className="products">
-        {ProductData.map((produto, index) => (
-          <div key={index} className="product-item">
-            {/* Imagem do produto */}
-            <img
-              src={`/images/${produto.image}`} // Referência correta à pasta public
-              className="product-image"
-              alt={produto.name}
-            />
-            {/* Tipo do produto */}
-            <p className="product-type">{produto.type}</p>
-            {/* Nome do produto */}
-            <h3 className="product-name">{produto.name}</h3>
-            {/* Preço antigo e preço com desconto */}
-            <div className="product-price">
-              <span className="price-old">{`R$ ${produto.price.toFixed(2)}`}</span>
-              {produto.priceDiscount ? (
-                <span className="price-new">{`R$ ${produto.priceDiscount.toFixed(2)}`}</span>
-              ) : (
-                <span className="price-no-discount">{`R$ ${produto.price.toFixed(2)}`}</span>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+        align-items: center;
+        justify-content: center;
+    `;
+    const Listing = styled.div`
+        width: 90vw;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    `;
+    return (
+        <ListingContainer>
+            <Listing>
+
+                {products.map((produto, index) => {
+                    return (
+                        <div id={`productCard_${index}`} key={index}>
+                            <Link to={'/Produto'}>
+                                <ProductCard imagem={produto.image} name={produto.name} price={produto.price} {...(produto.priceDiscount && { priceDiscount: produto.priceDiscount })} />
+                            </Link>
+
+                        </div>
+                    )
+                })}
+            </Listing>
+        </ListingContainer>
+    );
 };
 
 export default ProductListingPage;

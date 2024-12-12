@@ -1,24 +1,7 @@
-.product-type {
-  font-size: 14px;
-  color: #555;
-  margin: 8px 0;
-  text-align: center;
-  font-weight: bold;
+/* src/components/ProductListing.css */
+.product-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
-
-.price-old {
-  text-decoration: line-through;
-  color: #999;
-  margin-right: 8px;
-}
-
-.price-new {
-  color: #e63946;
-  font-weight: bold;
-}
-
-.price-no-discount {
-  color: #000;
-  font-weight: bold;
-}
-

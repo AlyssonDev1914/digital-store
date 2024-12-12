@@ -7,6 +7,7 @@ import ProductListingPage from "../../componets/ProductListingPage/ProductListin
 import Promotion from "../../componets/Promotion/Promotion";
 
 
+
 const Home = () => {
     return ( 
       <>
@@ -17,7 +18,7 @@ const Home = () => {
         <Section title="Coleções em destaque" titleAlign ="center">
            <CollectionIcon/>
         </Section>
-        <Section title="Produtos em alta" link={{ href: "/produtos", text: "Ver todos"  }}>
+        <Section title="Produtos em alta" link={{ href: "/produtos", text: "Ver todos", }}>
           <ProductListingPage/>
         </Section>
        <Promotion/>        

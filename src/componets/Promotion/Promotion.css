@@ -1,12 +1,17 @@
 .PromotionContainer{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--white);
+    padding: 0 150px;
 }
 .childrenPromo{
-    width: 90vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .text-x-small-bold {
     font-family: Inter;
@@ -24,7 +29,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 50px;
-    letter-spacing: 0.9999998807907104px;
+    letter-spacing: 1px;
     text-align: left;
     color: var(--dark-gray-2);
     margin-bottom: 20px;
@@ -50,12 +55,14 @@
     background-color: var(--primary);
     border: none;
     color: var(--light-gray-3);
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+    cursor: pointer; 
 }
 
-.btn-oferas:hover{
-    box-shadow: 1px 1px 20px var(--tertiary); 
-    transform: scale(1.1); 
+.btn-ofertas:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0, 0.3); 
+    transform: translateY(-4px); 
    
 }
 
