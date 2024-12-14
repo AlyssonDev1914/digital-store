@@ -1,18 +1,42 @@
 .bodyFilter{
+margin-top: 20px;
 width: 308px;
-padding: 30px 0px 0px 0px;
+padding: 30px 0px 10px 15px;
 border-radius: 4px 0px 0px 0px;
 background-color: var(--white);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 10px;
+text-decoration: none;
+color: var(--dark-gray-2);
+
 }
+
 .bodyFilter h2{
     font-size: 16px;
-    }
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.hrfilter{
+    width: 90%;
+    margin: 0 0 0 5px;
+
+}
   
 
 .titleFilter{
-    font-weight: bold;
     font-size: 14px;
+    margin-top: 10px;
 }
+
+.title-options{
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+
+
 
 .filter-itens input[type="checkbox"]:checked{
     accent-color: var(--primary);
@@ -21,6 +45,7 @@ background-color: var(--white);
 
 .filter-itens input[type="checkbox"]{
 align-items: center;
+margin-top: 10px;
 margin-right: 10px;
 width: 22px;
 height: 22px;
@@ -28,7 +53,19 @@ height: 22px;
 
 .filter-itens input[type="radio"]{
     align-items: center;
-    margin-right: 10;
+    margin-top: 10px;
+    margin-right: 10px;
     width: 22px;
     height: 22px; 
+}
+.filter-itens input[type="radio"]:checked{
+    accent-color: var(--primary);
+}
+
+.filter-itens label{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 14px;
 }

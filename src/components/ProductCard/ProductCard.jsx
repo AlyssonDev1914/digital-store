@@ -7,6 +7,7 @@ function ProductCard({ image, type, name, price, priceDiscount, hasDiscountTag }
 
   return (
     <div className="product-card">
+      <div className='bgimg'>
       {hasDiscountTag && (
         <div className="discount-tag">
          30%
@@ -15,7 +16,7 @@ function ProductCard({ image, type, name, price, priceDiscount, hasDiscountTag }
       <div className="product-card-image">
         <img src={image} alt={name} />
       </div>
-      
+      </div>
       <div className="product-card-details">
       <p className='cardType'>{type}</p>
         <h3 className="product-name">{name}</h3>

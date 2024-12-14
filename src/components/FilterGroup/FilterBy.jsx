@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import FilterGroup from "./FilterGroup";
 import "./Filterby.css"
 
@@ -29,14 +30,13 @@ function FilterBy(){
        ]
 
 
-
     return(
         <>
         <div className="bodyFilter">
             <h2>Filtra por</h2>
             <hr className="hrfilter"/>
             <div className="titleFilter">
-             <FilterGroup title={"marca"} typeIpn="checkBox" options={opt1}></FilterGroup>
+             <FilterGroup title={"Marca"} typeIpn="checkBox" options={opt1}></FilterGroup>
              <FilterGroup title={"Categorias"} typeIpn="checkBox" options={opt2}></FilterGroup>
              <FilterGroup title={"Genero"} typeIpn="checkBox" options={opt3}></FilterGroup>
              <FilterGroup title={"Marca"} typeIpn="radio" options={opt4}></FilterGroup>

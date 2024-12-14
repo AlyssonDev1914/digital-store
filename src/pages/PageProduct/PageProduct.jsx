@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import styled from 'styled-components';
 import ProductListingPage from "../../components/ProductListingPage/ProductListingPage";
 import FilterBy from "../../components/FilterGroup/FilterBy";
@@ -111,36 +111,60 @@ function PageProduct () {
         width: 90vw;
         margin: auto;
         padding-top: 40px;
+      };
+      .row-opt5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+    
+
       }
-    `;
+
+      .col-3 {
+        flex: 1 1 25%; 
+      }
+
+      .col-9 {
+        flex: 1 1 75%; 
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;
+      
+
+      }
+
+     
+      .product-listing-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
   
-    const PageContent = styled.div`
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; 
-      gap: 20px;
-      .filter-container {
-        flex: 1; 
-      }
-      .products-container {
-        flex: 3; 
-      }
     `;
+
+ 
   
     return (  
-      <PageProduct>
-        <div className="corBg">
-          <FilterOrdenate />
-          <PageContent>
-            <div className="filter-container">
-              <FilterBy />
-            </div>
-            <div className="products-container">
-              <ProductListingPage products={Produtos} />
-            </div>
-          </PageContent>
-        </div>
-      </PageProduct>
+            <PageProduct>
+              <div className='corBg'>
+                <div className='row'>
+                  <FilterOrdenate/>
+                </div>
+                <div className='row-opt5'>
+                 <div className='col-3'>
+                  <FilterBy/>
+                 </div>
+                 <div className='col-9' >
+                 <div className="product-listing-container">
+                  <ProductListingPage products={Produtos}/>
+                </div>
+
+                 </div>
+                </div>
+              </div>
+            </PageProduct>
     );
 }
 
