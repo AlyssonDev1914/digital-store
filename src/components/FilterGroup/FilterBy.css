@@ -1,0 +1,34 @@
+.bodyFilter{
+width: 308px;
+padding: 30px 0px 0px 0px;
+border-radius: 4px 0px 0px 0px;
+background-color: var(--white);
+}
+.bodyFilter h2{
+    font-size: 16px;
+    }
+  
+
+.titleFilter{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.filter-itens input[type="checkbox"]:checked{
+    accent-color: var(--primary);
+    
+}
+
+.filter-itens input[type="checkbox"]{
+align-items: center;
+margin-right: 10px;
+width: 22px;
+height: 22px;
+}
+
+.filter-itens input[type="radio"]{
+    align-items: center;
+    margin-right: 10;
+    width: 22px;
+    height: 22px; 
+}

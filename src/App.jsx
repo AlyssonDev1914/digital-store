@@ -1,4 +1,4 @@
-import Layout from "./pages/layout/Layout";
+import Layout from "./pages/Layout/Layout";
 
 function App() {
   return (

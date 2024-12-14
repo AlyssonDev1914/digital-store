@@ -1,0 +1,41 @@
+.filterContainer{
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90vw;
+   height: 60px;
+   color: var(--dark-gray-2);
+
+}
+
+.filterContainer span{
+    color: var(--dark-gray-2);
+    font-weight: lighter;
+
+}
+
+.ordem{
+    padding: 15px;
+    border: 1px solid var(--dark-gray-2);
+    border-radius: 4px;
+    
+}
+
+.ordem label{
+    font-weight: bold;
+    font-size: 16px ;
+}
+
+form{
+    width: 310px;
+}
+
+form select{
+    background-color: transparent;
+    color: var(--dark-gray-2);
+    font-size: 16px;
+    min-width: 190px;
+    border: none;
+    letter-spacing: 1px;
+}

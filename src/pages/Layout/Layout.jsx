@@ -1,6 +1,6 @@
 
-import Header from "../../componets/header/Header";
-import Footer from "../../componets/footer/Footer";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import { BrowserRouter } from "react-router-dom";
 import Rotas from '../../Rotas/Rotas';
 
