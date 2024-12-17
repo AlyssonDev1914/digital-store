@@ -4,7 +4,7 @@ import "./ProductOptions.css";
 function ProductOptions() {
     return (
         <>
-            <div className="container-total text-center flex-direction-row">
+            <div className="containeroptions text-center flex-direction-row">
                 <div className="ProductOptionsContainer">
                     <div className="row d-flex justify-content-around ">
                         <div className="container-box">

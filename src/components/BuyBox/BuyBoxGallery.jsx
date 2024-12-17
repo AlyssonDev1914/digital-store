@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './BuyBoxGallery.css';
 
 function BuyBoxGallery({ images }) {
-    // Inicializando a imagem principal com a primeira imagem
+    
     const [mainImage, setMainImage] = useState(images[0].src); 
 
     const handleThumbnailClick = (imageSrc) => {
-        setMainImage(imageSrc); // Atualiza a imagem principal
+        setMainImage(imageSrc); 
     };
 
     return (
@@ -19,10 +19,10 @@ function BuyBoxGallery({ images }) {
                 {images.map((image, index) => (
                     <img
                         key={index}
-                        src={image.src} // Acessando o src da imagem
+                        src={image.src} 
                         alt={`Miniatura ${index + 1}`}
                         className={mainImage === image.src ? 'thumbnail active' : 'thumbnail'}
-                        onClick={() => handleThumbnailClick(image.src)} // Ao clicar, muda a imagem principal
+                        onClick={() => handleThumbnailClick(image.src)} 
                     />
                 ))}
             </div>

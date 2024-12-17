@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import "./BuyBox.css"; 
-
+import "./BuyBox.css";
 
 const colors = {
     warning: '#ffb31f', 
@@ -11,6 +10,12 @@ const colors = {
     darkGray: '#2c3e50',
     secondary: '#8e44ad', 
 };
+
+
+const ContainerBuyBox = styled.div`
+    max-width: 700px;
+  
+`;
 
 function BuyBox(props) {
     const ColorButton = styled.button`
@@ -34,7 +39,7 @@ function BuyBox(props) {
 
         &:hover {
             transform: scale(1.3);
-            border: 2px ;
+            border: 2px;
         }
     `;
 
@@ -62,7 +67,7 @@ function BuyBox(props) {
     };
 
     return (
-        <Container>
+        <ContainerBuyBox>
             <div className="by-text">
                 <h3>{props.name}</h3>
                 <p>{props.description}</p>
@@ -106,7 +111,6 @@ function BuyBox(props) {
                         <ColorButton
                             key={index}
                             id={color} 
-                            style={{ backgroundColor: color }}
                             className={selectedColor === color ? 'active' : ""}
                             onClick={() => handleColorClick(color)}
                             isSelected={selectedColor === color} 
@@ -116,9 +120,9 @@ function BuyBox(props) {
             </div>
 
             <div className="buybtn">
-                <Button className="buybtn">COMPRAR</Button>
+                <Button>COMPRAR</Button>
             </div>
-        </Container>
+        </ContainerBuyBox>
     );
 }
 
