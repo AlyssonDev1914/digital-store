@@ -11,7 +11,7 @@
 .logo-container {
     background-color: var(--white);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 200px;
      
@@ -108,7 +108,7 @@
     justify-content: flex-start;
     margin-top: 20px;
     padding-top: 10px;
-    padding: 0px 260px ;
+    padding: 0px 11.5rem ;
 }
 
 .nav-bar a {

@@ -2,7 +2,9 @@
 
 ## Descrição do Projeto
 
-### Projeto React + Vite, feito para conclusão da parte de front end do curso de Full-Stack da Digital College
+### Projeto React + Vite, feito para conclusão da parte de front-end do curso de Full-Stack GeraçãoTech em parceria com da Digital College
+
+#### projeto bem completo utulizado conhecimento em React.js ultilizando Styled-Components, React-router-dom entre outras habilidades para conclusão do pro
 ## Tecnologias Utilizadas
 
 - **Frontend:**
@@ -44,3 +46,7 @@
 - Pagina Lista de Produtos 
 
 ![alt text](<pagina de produtos .png>)
+
+- Pagina de compra
+
+![alt text](<buybox .png>)

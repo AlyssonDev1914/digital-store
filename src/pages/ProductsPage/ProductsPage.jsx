@@ -19,8 +19,8 @@ function ProductsPage() {
     const product = {
         name: 'Tênis Nike Revolution 6 Next Nature Masculino',
         description: 'Casual | Nike | REF:38416711',
-        stars: ['Star 01.svg', 'Star 02.svg', 'Star 03.svg', 'Star 04.svg', 'Star-border.svg'],
-        rating: '4.7',
+        stars: ['/Stars.png'],
+        rating: ['/4.7star.png'],
         reviewsCount: '90',
         discountPrice: '219,00',
         price: '219,00',
@@ -77,17 +77,28 @@ function ProductsPage() {
         gap: 40px;
     `;
 
-  
+    
+    const Paginas = styled.p`
+        font-size: 14px;
+        color: var(--dark-gray-2);
+        margin-top: 30px;
+        margin-left: 110px; 
+        margin-bottom: 30px ;
+        font-family: 'Inter', sans-serif;
+    `;
 
     return (
         <PageContainer>
-           <Section title={'Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino'} >
+            
+            <Paginas>Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</Paginas>
+
             <ItemProduto>
                 <BuyBoxGallery images={imagensProdutos} /> 
                 <BuyBox
                     name={product.name}
                     description={product.description}
                     stars={product.stars}
+                    rating={product.rating}
                     reviewsCount={product.reviewsCount}
                     discountPrice={product.discountPrice}
                     price={product.price}
@@ -96,7 +107,6 @@ function ProductsPage() {
                     colors={product.colors}
                 />
             </ItemProduto>
-            </Section>
 
             <Section title={'Produtos relacionados'} link={{ text: 'ver todos', href: '/produtos' }}>
                 <ProductListingPage products={ProductCard} />
