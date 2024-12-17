@@ -11,7 +11,7 @@ function ProductOptions() {
                             <div className="content-text">
                                 <span className="text-price">30% OFF</span>
                                 <h3 className="text-title">Novo drop Supreme</h3>
-                                <Link to="/Produto">
+                                <Link to="/Produtos">
                                     <button>Comprar</button>
                                 </Link>
                             </div>
@@ -21,7 +21,7 @@ function ProductOptions() {
                             <div className="content-text">
                                 <span className="text-price">30% OFF</span>
                                 <h3 className="text-title">Coleção Adidas</h3>
-                                <Link to="/Produto">
+                                <Link to="/Produtos">
                                     <button>Comprar</button>
                                 </Link>
                             </div>
@@ -31,7 +31,7 @@ function ProductOptions() {
                             <div className="content-text">
                                 <span className="text-price">30% OFF</span>
                                 <h3 className="text-title">Novo Beats Bass</h3>
-                                <Link to="/Produto">
+                                <Link to="/Produtos">
                                     <button>Comprar</button>
                                 </Link>
                             </div>

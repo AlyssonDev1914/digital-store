@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styled from 'styled-components';
 import ProductListingPage from "../../components/ProductListingPage/ProductListingPage";
 import FilterBy from "../../components/FilterGroup/FilterBy";

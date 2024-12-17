@@ -77,7 +77,7 @@ function Gallery() {
               <h6>Melhores ofertas personalizadas</h6>
               <h1 className="titleimg">{images[currentIndex].title}</h1>
               <p>{images[currentIndex].description}</p>
-              <Link to="/product/:id" className="buttton-link">
+              <Link to="/produtos" className="buttton-link">
               <button className="button-ofertas">Ver ofertas</button>
               </Link>
             </div>

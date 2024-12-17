@@ -1,0 +1,152 @@
+.container {
+    width: 100vw;
+    max-width: 1000px;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .paginas{
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .by-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .by-text h3 {
+    font-size: 48px;
+  }
+  
+  .by-text p {
+    font-size: 0.9rem;
+    color: var(--darkGray);
+  }
+  
+  .avaliacao {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .avaliacao .notas {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .avaliacao .notas span {
+    background: var(--warning);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .preco {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .preco p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  .preco p:nth-child(2) {
+    text-decoration: line-through;
+    color: var(--lightGray);
+  }
+  
+  .descr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .descr span {
+    font-weight: bold;
+    color: var(--darkGray);
+  }
+  
+  .descr p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--darkGray3);
+  }
+  
+  .tamanho,
+  .cor {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+  
+  .tamanhos,
+  .cores {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .tamanhos button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--darkGray);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .tamanhos button.active {
+    background: var(--primary);
+    color: #fff;
+  }
+  
+  .color-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .color-button.selected {
+    border-color: var(--primary);
+    transform: scale(1.2);
+  }
+  
+  .by-btn {
+    margin-top: 2rem;
+    display: flex;
+  }
+  
+  .by-btn button {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--warning);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .by-btn button:hover {
+    background: var(--primary);
+  }

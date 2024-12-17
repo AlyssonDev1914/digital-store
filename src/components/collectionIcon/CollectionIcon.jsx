@@ -7,7 +7,7 @@ function CollectionIcon() {
         <>
         <div className="container">
             <div className="items">
-                <Link to={'/produto'} className="links">
+                <Link to={'/produtos'} className="links">
                 <div className="imgIcon">
                  <img className="icons" src="./tshirt.png" alt="icone de camisa" />
                 </div>
@@ -17,7 +17,7 @@ function CollectionIcon() {
                 </Link>
             </div>
             <div className="items">
-                <Link to={'/produto'} className="links">
+                <Link to={'/produtos'} className="links">
                 <div className="imgIcon">
                  <img className="icons" src="./calça.png" alt="icone de calça" />
                 </div>
@@ -27,7 +27,7 @@ function CollectionIcon() {
                 </Link>
             </div>
             <div className="items">
-                <Link to={'/produto'} className="links">
+                <Link to={'/produtos'} className="links">
                 <div className="imgIcon">
                  <img className="icons" src="./calça.png" alt="icone de Bonés" />
                 </div>
@@ -37,7 +37,7 @@ function CollectionIcon() {
                 </Link>
             </div>
             <div className="items">
-                <Link to={'/produto'} className="links">
+                <Link to={'/produtos'} className="links">
                 <div className="imgIcon">
                  <img className="icons" src="./foneIcon.png" alt="icone de Headphoes" />
                 </div>
@@ -47,7 +47,7 @@ function CollectionIcon() {
                 </Link>
             </div>
             <div className="items">
-                <Link to={'/produto'} className="links">
+                <Link to={'/produtos'} className="links">
                 <div className="imgIcon">
                  <img className="icons" src="./shoesIcon.png" alt="icone de tênis" />
                 </div>

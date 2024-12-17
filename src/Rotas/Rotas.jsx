@@ -9,8 +9,8 @@ const Rotas = () =>{
         <>
         <Routes>
             <Route path= "/" element= {<Home/>}/>
-            <Route path= "/product/:id" element= {<PageProduct/>}/>
-            <Route path= "/produtos" element= {< ProductsPage/>}/>
+            <Route path= "/produtos" element= {<PageProduct/>}/>
+            <Route path= "/product/:id" element= {< ProductsPage/>}/>
         </Routes>
 
         </>
