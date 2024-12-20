@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import FilterGroup from "./FilterGroup";
-import "./Filterby.css"
+import "./FilterBy.css"
 
 function FilterBy(){
        const opt1=[
