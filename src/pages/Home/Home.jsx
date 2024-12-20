@@ -2,7 +2,7 @@ import React from "react";
 import Gallery from "../../components/Gallery/Gallery";
 import Section from "../../components/section/Section";
 import ProductOptions from "../../components/ProductOptions/ProductOptions";
-import CollectionIcon from "../../components/collectionIcon/collectionIcon";
+import CollectionIcon from "../../components/CollectionIcon/CollectionIcon.jsx";
 import ProductListingPage from "../../components/ProductListingPage/ProductListingPage";
 import Promotion from "../../components/Promotion/Promotion";
 import styled from "styled-components";
